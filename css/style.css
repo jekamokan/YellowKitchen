@@ -145,9 +145,13 @@ body {
   padding: 18.5px 20px;
   border: 2px solid #ffe145;
   border-radius: 4px;
-  background-color: transparent;
+  background-color: #fff;
   margin-right: 24px;
   cursor: pointer;
+  transition: all 0.5s;
+}
+.header__order-btn:hover {
+  box-shadow: 0px 0px 50px #f5fb8e;
 }
 .header__order-text {
   font-family: "Martel Sans", sans-serif;

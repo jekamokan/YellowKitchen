@@ -10,7 +10,6 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-
 .header {
   &__wrapper {
     border-bottom: 1px solid #d4d7e6;
@@ -203,9 +202,13 @@ body {
     padding: 18.5px 20px;
     border: 2px solid #ffe145;
     border-radius: 4px;
-    background-color: transparent;
+    background-color: #fff;
     margin-right: 24px;
     cursor: pointer;
+    transition: all 0.5s ;
+    &:hover {
+      box-shadow: 0px 0px 50px rgb(245, 251, 142);
+    }
   }
   &__order-text {
     font-family: $font-martel;
@@ -340,6 +343,9 @@ body {
       transform: translateX(-15px);
       box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
       cursor: pointer;
+      &:hover {
+        
+      }
     }
     &__slider-arrowright {
       position: absolute;
