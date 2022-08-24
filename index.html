@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;700;800&family=Open+Sans:wght@700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="container">
+          <div class="header__menu">
+            <div class="header__logo">
+              <a class="header__link" href="">
+                <img
+                  class="header__link-img"
+                  src="./images/logo.svg"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div class="header__nav">
+              <button class="header__login-btn">Log in</button>
+              <button class="header__basket-btn">0</button>
+              <div class="header__burger-btn">
+                <span ></span>
+              </div>
+              <div class="rightside-menu rightside-menu--close">
+                <a class="rightside-menu__call " href="tel:0800111126">0800 111 126</a>
+                <time class="rightside-menu__time rightside-menu__line">8:00 - 22:00</time>
+                <a  class="rightside-menu__link rightside-menu__line" href="#">Delivery info</a>
+                <a  class="rightside-menu__link rightside-menu__line" href="#">About us</a>
+                <a  class="rightside-menu__link rightside-menu__line" href="#">Restaurants</a>
+                <a  class="rightside-menu__link rightside-menu__line" href="#">Specialities</a>
+                <select class="rightside-menu__languages" name="languages" id="language-select">
+                  <option class="rightside-menu__languages-item" value="english">English</option>
+                  <option class="rightside-menu__languages-item" value="ukrainian">Ukrainian</option>
+                  <option class="rightside-menu__languages-item" value="deutsch">Deutsch</option>
+                  <option class="rightside-menu__languages-item" value="french">French</option>
+                  <option class="rightside-menu__languages-item" value="italian">Italian</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__content">
+          <div class="header__text">
+            <h1 class="header_text-title">Your Food court at home</h1>
+            <div class="header__content-btn">
+              <button class="header__order-btn">
+                <p class="header__order-text"><span>Delivery</span> Order in</p>
+              </button>
+              <button class="header__order-btn">
+                <p class="header__order-text">
+                  <span>Takeout</span> Grab and go
+                </p>
+              </button>
+              <div class="header__benefits">
+                <div class="header__delivery">
+                  <img
+                    class="header__delivery-img"
+                    src="./images/delivery.svg"
+                    alt="time"
+                  />
+                  <p class="header__delivery-text">
+                    delivery in all paris in less than 30 minutes
+                  </p>
+                </div>
+                <div class="header__price">
+                  <img
+                    class="header__delivery-img"
+                    src="./images/price.svg"
+                    alt="bike"
+                  />
+                  <p class="header__delivery-text">
+                    Free delivery from 29 euros
+                  </p>
+                </div>
+                <div class="header__fresh">
+                  <img
+                    class="header__delivery-img"
+                    src="./images/fresh.svg"
+                    alt="fresh"
+                  />
+                  <p class="header__delivery-text">
+                    Only fresh <br> and French products
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="restaurants">
+      <div class="container">
+        <div class="restaurants__title">
+          <h2 class="restaurants_title-text">Restaurants</h2>
+          <button class="restaurants__btn " type="button">
+            <span class="restaurants__btn-text">show all</span>
+          </button>
+        </div>
+        <div class="restaurants__slider">
+          <div class="restaurants__item">
+            <a  class="restaurants__link" href="">
+              <img class="restaurants__img" src="./images/slider11.jpg" alt="">
+              <div class="restaurants__box">
+                <img class="restaurants__logo" src="./images/slider1.svg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="restaurants__item">
+            <a  class="restaurants__link" href="">
+              <img class="restaurants__img" src="./images/slider12.jpg" alt="">
+              <div class="restaurants__box">
+                <img class="restaurants__logo" src="./images/slider2.svg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="restaurants__item">
+            <a  class="restaurants__link" href="">
+              <img class="restaurants__img" src="./images/slider13.jpg" alt="">
+              <div class="restaurants__box">
+                <img class="restaurants__logo" src="./images/slider3.svg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="restaurants__item">
+            <a  class="restaurants__link" href="">
+              <img class="restaurants__img" src="./images/slider14.jpg" alt="">
+              <div class="restaurants__box">
+                <img class="restaurants__logo" src="./images/slider4.svg" alt="">
+              </div>
+            </a>
+          </div>
+            <div class="restaurants__item">
+            <a  class="restaurants__link" href="">
+              <img class="restaurants__img" src="./images/slider11.jpg" alt="">
+              <div class="restaurants__box">
+                <img class="restaurants__logo" src="./images/slider1.svg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="restaurants__item">
+            <a  class="restaurants__link" href="">
+              <img class="restaurants__img" src="./images/slider12.jpg" alt="">
+              <div class="restaurants__box">
+                <img class="restaurants__logo" src="./images/slider2.svg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="restaurants__item">
+            <a  class="restaurants__link" href="">
+              <img class="restaurants__img" src="./images/slider13.jpg" alt="">
+              <div class="restaurants__box">
+                <img class="restaurants__logo" src="./images/slider3.svg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="restaurants__item">
+           <a  class="restaurants__link" href="">
+              <img class="restaurants__img" src="./images/slider14.jpg" alt="">
+              <div class="restaurants__box">
+                <img class="restaurants__logo" src="./images/slider4.svg" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="nearest">
+      <div class="container">
+        <div class="nearest__content">
+          <div class="nearest__info">
+            <h2 class="nearest__title">Your nearest restaurants</h2>
+            <p class="nearest__text">Each kitchen works with its own delivery area to deliver food to you as soon as possible</p>
+          </div>
+          <form class="nearest__form">
+            <input class="nearest__adress" type="text" name="geolocation" placeholder="Enter delivery address" >
+            <button class="nearest__btn " type="button">
+              <span class="nearest__btn-text">send</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="specialities">
+      <div class="container">
+        <div class="specialities__top">
+          <h2 class="specialities__title">Specialities</h2>
+          <button class="specialities__btn ">
+            <span class="specialities__btn-text">
+              show all
+            </span>
+          </button>
+        </div>
+        <div class="specialities__slider">
+            <div class="specialities__items">
+              <a class="specialities__link" href="#">
+                <div class="specialities__item">
+                  <img class="specialities__img" src="./images/specialities/bagel.svg" alt="" >
+                  <p class="specialities__text">Bagel</p>
+                </div>
+              </a>
+            </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/burger.svg" alt="" >
+                <p class="specialities__text">Burger</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/chicken.svg" alt="" >
+                <p class="specialities__text">Chicken</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/raviolli.svg" alt="" >
+                <p class="specialities__text">Pasta</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/fish.svg" alt="" >
+                <p class="specialities__text">Fish</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/fishnchips.svg" alt="" >
+                <p class="specialities__text">Fish’Chips</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/vegan.svg" alt="" >
+                <p class="specialities__text">Salads</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/pizza.svg" alt="" >
+                <p class="specialities__text">Pizza</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+              <a class="specialities__link" href="#">
+                <div class="specialities__item">
+                  <img class="specialities__img" src="./images/specialities/bagel.svg" alt="" >
+                  <p class="specialities__text">Bagel</p>
+                </div>
+              </a>
+            </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/burger.svg" alt="" >
+                <p class="specialities__text">Burger</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/chicken.svg" alt="" >
+                <p class="specialities__text">Chicken</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/raviolli.svg" alt="" >
+                <p class="specialities__text">Pasta</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/fish.svg" alt="" >
+                <p class="specialities__text">Fish</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/fishnchips.svg" alt="" >
+                <p class="specialities__text">Fish’Chips</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/vegan.svg" alt="" >
+                <p class="specialities__text">Salads</p>
+              </div>
+            </a>
+          </div>
+          <div class="specialities__items">
+            <a class="specialities__link" href="#">
+              <div class="specialities__item">
+                <img class="specialities__img" src="./images/specialities/pizza.svg" alt="" >
+                <p class="specialities__text">Pizza</p>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <div class="info-about">
+      <div class="container">
+        <div class="info-about__content">
+          <ul class="info-about__list">
+            <li class="info-about__items">
+              <div class="info-about__items-content">
+                <p class="info-about__number">1</p>
+                <p class="info-about__text">kitchen</p>
+              </div>
+            </li>
+            <li class="info-about__items">
+              <p class="info-about__number">11</p>
+              <p class="info-about__text">specialties</p>
+            </li>
+            <li class="info-about__items">
+              <p class="info-about__number">11</p>
+              <p class="info-about__text">restaurants</p>
+            </li>
+            <li class="info-about__items">
+              <p class="info-about__number">1</p>
+              <p class="info-about__text">transport costs</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <div class="container">
+        <div class="map__bg">
+          <a href="#" class="map__link">
+            <img class="map__img-one " title="57-63 Av. Jean Jaurès, 75019 Paris, Франція" src="./images/mapsgeo.svg" alt=""  >
+          </a>
+          <a href="#" class="map__link">
+            <img class="map__img-two" title="1 Pass. Ruelle, 75018 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+          </a>
+          <a href="#" class="map__link">
+            <img class="map__img-thre" title="Rue du 8 Mai 1945, 75010 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+          </a>
+          <a href="#" class="map__link">
+            <img class="map__img-four" title="9-11 Pl. du Colonel Fabien, 75010 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+          </a>
+          <a href="#" class="map__link">
+            <img class="map__img-five" title="44 Rue de Paradis, 75010 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+          </a>
+          <a href="#" class="map__link">
+            <img class="map__img-six" title="2 Av. de la Cascade, 75019 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+          </a>
+          <a href="#" class="map__link">
+            <img class="map__img-seven" title="28-32 Rue de l'Amiral Mouchez, 75014 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+          </a>
+          <a href="#" class="map__link">
+            <img class="map__img-eight" title="15 Rue Pierre Rigaud, 94200 Ivry-sur-Seine, Франція" src="./images/mapsgeo.svg" alt="" >
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="our-instagram">
+      <div class="container">
+        <h2 class="our-instagram__title">
+          <span>#YellowKitchens</span> in instagram
+        </h2>
+        <ul class="our-instagram__list">
+          <li class="our-instagram__item">
+            <a href="" class="our-instagram__link">
+              <img class="our-instagram__img" src="./images/inst1.jpg" alt="" >
+            </a>
+          </li>
+          <li class="our-instagram__item">
+            <a href="" class="our-instagram__link">
+              <img class="our-instagram__img" src="./images/inst2.jpg" alt="" >
+            </a>
+          </li>
+          <li class="our-instagram__item">
+            <a href="" class="our-instagram__link">
+              <img class="our-instagram__img" src="./images/inst3.jpg" alt="" >
+            </a>
+          </li>
+          <li class="our-instagram__item">
+            <a href="" class="our-instagram__link">
+              <img class="our-instagram__img" src="./images/inst4.jpg" alt="" >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__store">
+            <a class="footer__link-logo">
+              <div class="footer__link-logobox">
+                <img class="footer__link-img" src="./images/logo-footer.svg" alt="" >
+              </div>
+            </a>
+           <div class="footer__store-block">
+             <a href="" class="footer__store-link">
+              <img class="footer__store-img" src="./images/appstore.jpg" alt="" >
+            </a>
+            <a href="" class="footer__store-link">
+              <img class="footer__store-img" src="./images/googlestore.jpg" alt="" >
+            </a>
+           </div>
+          </div>
+          <div class="footer__list-box">
+            <ul class="footer__list">
+              <li class="footer__item footer__item-title">About us</li>
+              <li class="footer__item"><a class="footer__item-link" href="" >Concept</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="" >Franchise</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="" >Business</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="" >Restaurant signup</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="" >For Investors</a></li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item footer__item-title">Get help</li>
+              <li class="footer__item"><a class="footer__item-link" href="" >Read FAQs</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="" >Restaurants</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="" >Specialities</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="" >Sign up to deliver</a></li>
+              <li class="footer__item">
+                <select class="rightside-menu__languages footer__item-languages" name="" id="">
+                  <option class="rightside-menu__languages-item" value="english">English</option>
+                  <option class="rightside-menu__languages-item" value="ukrainian">Ukrainian</option>
+                  <option class="rightside-menu__languages-item" value="deutsch">Deutsch</option>
+                  <option class="rightside-menu__languages-item" value="french">French</option>
+                  <option class="rightside-menu__languages-item" value="italian">Italian</option>
+                </select>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item footer__item-title">Contact us</li>
+              <li class="footer__item footer__item-address"><a class="footer__item-link" href="" >Yellow kitchen Paris 11</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="" >69 avenue de la Republique 75011 Paris</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="tel:0800111126" >0800 111 126</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="mailto:contact@yellowkitchens.com" >contact@yellowkitchens.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-social">
+            <a href="" class="footer__bottom-link">
+              <img class="footer__bottom-img" src="./images/instagram.svg" alt="" >
+            </a>
+            <a href="" class="footer__bottom-link">
+              <img class="footer__bottom-img" src="./images/twitter.svg" alt="" >
+            </a>
+            <a href="" class="footer__bottom-link">
+              <img class="footer__bottom-img" src="./images/facebook.svg" alt="" >
+            </a>
+          </div>
+          <div class="footer__bottom-privacy">
+            <a href="" class="footer__bottom-info">Privacy Policy</a>
+            <a href="" class="footer__bottom-info">Terms</a>
+            <p class="footer__bottom-text">© 2020 Yellow kitchen</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+  </body>
+</html>
