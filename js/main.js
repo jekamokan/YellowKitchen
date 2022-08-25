@@ -4,8 +4,16 @@ $(document).ready(function () {
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="restaurants__slider-arrow restaurants__slider-arrowleft"><img class="pre-arrow-img" src="./images/arrow-left.svg" alt=""></button>',
     nextArrow: '<button type="button" class="restaurants__slider-arrow restaurants__slider-arrowright"><img class="next-arrow-img" src="./images/arrow-right.svg" alt=""></button>',
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+    {
+      breakpoint: 650,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    ]
   });
 
   $('.specialities__slider').slick({

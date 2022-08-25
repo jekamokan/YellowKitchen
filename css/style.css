@@ -123,7 +123,7 @@ body {
 .header__burger-btn.header__burger-line--close span {
   transform: scale(0);
 }
-.header_text-title {
+.header__text-title {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 58px;
@@ -196,14 +196,13 @@ body {
 .header__fresh {
   display: flex;
   align-items: center;
-  min-width: 236px;
 }
 
 .restaurants {
   max-height: 425px;
   margin-bottom: 65px;
 }
-.restaurants_title-text {
+.restaurants__title-text {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 36px;
@@ -214,6 +213,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 48px 0;
+  align-items: center;
 }
 .restaurants__btn {
   background: #F2F4FA;
@@ -239,18 +239,16 @@ body {
 .restaurants__item {
   border-radius: 4px;
   box-shadow: 0px 6px 13px 2px rgba(0, 0, 0, 0.08);
-  width: 296px !important;
-  height: 296px;
-  margin-right: 19px;
+  margin: 0 11px;
 }
 .restaurants__box {
-  width: 296px;
   height: 112px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  padding: 10px;
 }
 .restaurants__img {
   border-top-left-radius: 4px;
@@ -330,14 +328,15 @@ body {
   width: 285px;
   background-color: #fff;
   top: 73px;
-  right: -25px;
+  right: 0;
   bottom: 0;
   padding: 22px 42px 0 36px;
   box-shadow: -6px 8px 12px 0px rgba(0, 0, 0, 0.57);
-  transition: all 0.2s ease;
+  transition: all 0.7s ease;
 }
 .rightside-menu.rightside-menu--close {
-  transform: translateX(100%);
+  transform: translateX(500%);
+  display: none;
 }
 .rightside-menu__call {
   font-family: "Martel Sans", sans-serif;
@@ -398,6 +397,7 @@ body {
   font-family: "Martel Sans", sans-serif;
   font-weight: 800;
   font-size: 12px;
+  margin-left: 145px;
   color: #9093A6;
   cursor: pointer;
 }
@@ -812,4 +812,162 @@ body {
   font-size: 12px;
   line-height: 16px;
   color: #fff;
+}
+
+@media (max-width: 1150px) {
+  .header__text-title {
+    font-size: 50px;
+    max-width: 450px;
+  }
+  .header__benefits {
+    flex-direction: column;
+    max-width: 200px;
+    margin-left: 0;
+    gap: 20px;
+    margin-top: 100px;
+  }
+  .header__delivery {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+  }
+  .header__delivery-text {
+    text-align: center;
+    margin: 0;
+  }
+  .header__price {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+  }
+  .header__price-text {
+    text-align: center;
+  }
+  .header__fresh {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+  }
+  .header__fresh-text {
+    text-align: center;
+  }
+}
+@media (max-width: 1070px) {
+  .header__text-title {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+  }
+  .header__benefits {
+    visibility: hidden;
+    margin-top: -70px;
+  }
+}
+@media (max-width: 970px) {
+  .header__order-btn {
+    display: block;
+    margin: 15px;
+  }
+}
+@media (max-width: 880px) {
+  .header__text-title {
+    margin: 0 auto;
+    border-radius: 40px;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 100px;
+  }
+  .header__btn-box {
+    margin: 0 auto;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1px 0;
+    border-radius: 40px;
+  }
+  .header__order-btn {
+    margin: 15px auto;
+  }
+}
+@media (max-width: 770px) {
+  .restaurants__box {
+    height: 90px;
+  }
+  .restaurants__slider-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 650px) {
+  .header__text-title {
+    font-size: 35px;
+  }
+
+  .restaurants__title-text {
+    font-size: 30px;
+  }
+  .restaurants__btn {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 440px) {
+  .header__text-title {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  .header__nav {
+    gap: 20px;
+  }
+
+  .restaurants__title-text {
+    font-size: 24px;
+  }
+  .restaurants__btn {
+    padding: 5px 10px;
+    height: fit-content;
+  }
+  .restaurants__btn-text {
+    font-size: 12px;
+  }
+  .restaurants__title {
+    margin: 35px 0;
+  }
+  .restaurants__box {
+    height: 75px;
+  }
+}
+@media (max-width: 370px) {
+  .header__text-title {
+    letter-spacing: 0.01em;
+  }
+  .header__menu {
+    display: block;
+    margin: 0 auto;
+  }
+  .header__logo {
+    padding: 10px 0;
+  }
+  .header__nav {
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .header__link-img {
+    margin: 0 auto;
+  }
+
+  .rightside-menu {
+    top: 99px;
+  }
+
+  .restaurants__box {
+    height: 60px;
+  }
+}
+@media (max-width: 321px) {
+  .header__text-title {
+    line-height: 40px;
+  }
+
+  .restaurants__box {
+    height: 50px;
+  }
 }
