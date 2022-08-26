@@ -548,7 +548,7 @@ body {
   opacity: 0.4;
 }
 .specialities__link {
-  width: 136px !important;
+  width: 136px;
   height: 136px;
   box-shadow: 0px 2px 16px rgba(60, 62, 74, 0.08);
   border-radius: 6px;
@@ -623,6 +623,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 284px;
 }
+.info-about__items-content {
+  margin-bottom: 45px;
+}
 .info-about__content {
   margin: 0 auto;
   padding-top: 56px;
@@ -658,7 +661,6 @@ body {
   color: #3F4255;
   text-align: center;
   padding-top: 10px;
-  margin-bottom: 45px;
 }
 
 .map {
@@ -668,6 +670,7 @@ body {
   background-image: url(../images/mao.jpg);
   min-height: 600px;
   position: relative;
+  background-repeat: no-repeat;
 }
 .map__img-one {
   position: absolute;
@@ -788,6 +791,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #D4D7E6;
+  margin: 0;
 }
 .footer__bottom {
   display: flex;
@@ -853,6 +857,18 @@ body {
   .header__fresh-text {
     text-align: center;
   }
+
+  .specialities__link {
+    margin-left: 24px;
+  }
+
+  .info-about {
+    background-size: auto;
+  }
+
+  .footer__top {
+    gap: 160px;
+  }
 }
 @media (max-width: 1070px) {
   .header__text-title {
@@ -863,6 +879,46 @@ body {
   .header__benefits {
     visibility: hidden;
     margin-top: -70px;
+  }
+
+  .info-about__items {
+    background-size: 120px 140px;
+  }
+  .info-about__number {
+    font-size: 50px;
+  }
+  .info-about__text {
+    font-size: 22px;
+  }
+
+  .map {
+    padding-bottom: 0;
+  }
+  .map__bg {
+    background-image: url(../images/map-adaptive.jpg);
+    background-size: contain;
+    min-height: 530px;
+  }
+  .map__link {
+    display: none;
+  }
+
+  .our-instagram__title {
+    font-size: 30px;
+  }
+
+  .footer {
+    display: block;
+  }
+  .footer__store {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer__store-block {
+    gap: 50px;
+  }
+  .footer__top {
+    display: block;
   }
 }
 @media (max-width: 970px) {
@@ -880,6 +936,21 @@ body {
   }
   .nearest__adress::placeholder {
     font-size: 15px;
+  }
+
+  .specialities {
+    padding: 50px 0;
+  }
+  .specialities__link {
+    margin-left: 8px;
+  }
+
+  .map__bg {
+    min-height: 500px;
+  }
+
+  .our-instagram__title {
+    font-size: 25px;
   }
 }
 @media (max-width: 880px) {
@@ -917,6 +988,42 @@ body {
   .nearest__content {
     padding: 0 65px;
   }
+
+  .info-about {
+    background-image: none;
+  }
+  .info-about__items {
+    background-size: 90px 110px;
+    min-width: 200px;
+  }
+  .info-about__items-content {
+    margin-bottom: 55px;
+  }
+  .info-about__number {
+    font-size: 40px;
+    padding-bottom: 25px;
+  }
+  .info-about__text {
+    font-size: 20px;
+    padding-top: 0;
+  }
+  .info-about__content {
+    padding-top: 15px;
+  }
+
+  .map {
+    padding-top: 0;
+  }
+  .map__bg {
+    min-height: 440px;
+  }
+
+  .our-instagram__title {
+    font-size: 22px;
+  }
+  .our-instagram__list {
+    gap: 18px;
+  }
 }
 @media (max-width: 770px) {
   .restaurants__box {
@@ -925,6 +1032,29 @@ body {
   .restaurants__slider-arrow {
     width: 40px;
     height: 40px;
+  }
+
+  .map__bg {
+    min-height: 390px;
+  }
+}
+@media (max-width: 750px) {
+  .specialities__link {
+    margin-left: 20px;
+  }
+
+  .info-about__items {
+    min-width: 170px;
+  }
+  .info-about__text {
+    font-size: 17px;
+  }
+  .info-about__number {
+    padding-top: 25px;
+  }
+
+  .our-instagram__title {
+    font-size: 20px;
   }
 }
 @media (max-width: 650px) {
@@ -937,6 +1067,21 @@ body {
   }
   .restaurants__btn {
     padding: 10px 20px;
+  }
+
+  .specialities__title {
+    font-size: 30px;
+  }
+  .specialities__btn {
+    padding: 10px 20px;
+  }
+  .specialities__link {
+    width: 120px;
+    height: 120px;
+    margin-left: 15px;
+  }
+  .specialities__text {
+    margin-top: 10px;
   }
 
   .nearest__title {
@@ -958,6 +1103,43 @@ body {
   .nearest__content {
     padding: 0 25px;
   }
+
+  .info-about__items {
+    min-width: 140px;
+  }
+  .info-about__items {
+    background-size: 90px 110px;
+  }
+  .info-about__text {
+    font-size: 15px;
+  }
+  .info-about__number {
+    font-size: 35px;
+  }
+
+  .map__bg {
+    min-height: 330px;
+  }
+
+  .our-instagram__title {
+    font-size: 18px;
+  }
+  .our-instagram__list {
+    gap: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .specialities__link {
+    margin-left: 33px;
+  }
+
+  .map__bg {
+    min-height: 300px;
+  }
+
+  .our-instagram__title {
+    font-size: 16px;
+  }
 }
 @media (max-width: 540px) {
   .nearest__adress {
@@ -973,6 +1155,54 @@ body {
   }
   .nearest__btn-text {
     font-size: 13px;
+  }
+
+  .info-about__items {
+    min-width: 120px;
+  }
+  .info-about__items {
+    background-size: 80px 100px;
+  }
+  .info-about__text {
+    font-size: 13px;
+  }
+  .info-about__number {
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+
+  .map__bg {
+    min-height: 270px;
+  }
+}
+@media (max-width: 500px) {
+  .specialities__link {
+    margin-left: 17px;
+  }
+
+  .info-about__items {
+    min-width: 110px;
+  }
+  .info-about__items {
+    background-size: 75px 95px;
+  }
+  .info-about__text {
+    font-size: 11px;
+  }
+  .info-about__number {
+    font-size: 30px;
+  }
+
+  .map__bg {
+    min-height: 245px;
+  }
+
+  .our-instagram {
+    padding-bottom: 30px;
+  }
+  .our-instagram__title {
+    font-size: 14px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 440px) {
@@ -1001,6 +1231,26 @@ body {
     height: 85px;
   }
 
+  .specialities {
+    padding: 30px 0;
+  }
+  .specialities__title {
+    font-size: 24px;
+  }
+  .specialities__btn {
+    padding: 5px 10px;
+    height: fit-content;
+  }
+  .specialities__btn-text {
+    font-size: 12px;
+  }
+  .specialities__top {
+    margin-bottom: 30px;
+  }
+  .specialities__link {
+    margin-left: 7px;
+  }
+
   .nearest__title {
     line-height: 40px;
     font-size: 22px;
@@ -1011,11 +1261,12 @@ body {
   .nearest__adress {
     width: 190px;
     height: 35px;
-    padding-left: 0;
+    padding-left: 10px;
   }
   .nearest__adress::placeholder {
     font-size: 10px;
     background: none;
+    text-align: left;
   }
   .nearest__btn {
     width: 65px;
@@ -1023,6 +1274,72 @@ body {
   }
   .nearest__btn-text {
     font-size: 10px;
+  }
+
+  .info-about__items {
+    width: 49%;
+  }
+  .info-about__items {
+    background-size: 70px 85px;
+    min-height: 120px;
+  }
+  .info-about__text {
+    font-size: 11px;
+  }
+  .info-about__number {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+  }
+  .info-about__list {
+    flex-wrap: wrap;
+    margin: 0 30px;
+  }
+  .info-about__items-content {
+    margin-bottom: 15px;
+  }
+
+  .map__bg {
+    min-height: 210px;
+  }
+
+  .our-instagram__title {
+    font-size: 10px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 415px) {
+  .specialities__link {
+    width: 115px;
+    height: 115px;
+    margin-left: 6px;
+  }
+}
+@media (max-width: 391px) {
+  .header__burger-btn::before {
+    top: 16px;
+  }
+  .header__burger-btn::after {
+    bottom: 14px;
+  }
+
+  .specialities__link {
+    width: 100px;
+    height: 100px;
+    margin-left: 7px;
+    padding: 10px 0;
+  }
+
+  .rightside-menu {
+    width: 100%;
+  }
+
+  .map__bg {
+    min-height: 190px;
+  }
+
+  .our-instagram__list {
+    gap: 10px;
   }
 }
 @media (max-width: 370px) {
@@ -1049,16 +1366,38 @@ body {
   }
 
   .restaurants__box {
-    height: 60px;
+    height: 80px;
+  }
+
+  .map__bg {
+    min-height: 175px;
+  }
+}
+@media (max-width: 340px) {
+  .specialities__link {
+    width: 90px;
+    height: 90px;
+    margin-left: 6px;
+  }
+  .specialities__img {
+    width: 40px;
+  }
+  .specialities__text {
+    margin-top: 2px;
+    font-size: 13px;
+  }
+
+  .map__bg {
+    min-height: 160px;
+  }
+
+  .our-instagram__title {
+    font-size: 8px;
   }
 }
 @media (max-width: 321px) {
   .header__text-title {
     line-height: 40px;
-  }
-
-  .restaurants__box {
-    height: 50px;
   }
 
   .nearest {
@@ -1073,5 +1412,17 @@ body {
 
   .rightside-menu {
     width: 100%;
+  }
+
+  .specialities__link {
+    margin-left: 3px;
+  }
+
+  .info-about__list {
+    margin: 0 10px;
+  }
+
+  .map__bg {
+    min-height: 155px;
   }
 }

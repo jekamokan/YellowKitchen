@@ -4,7 +4,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="restaurants__slider-arrow restaurants__slider-arrowleft"><img class="pre-arrow-img" src="./images/arrow-left.svg" alt=""></button>',
     nextArrow: '<button type="button" class="restaurants__slider-arrow restaurants__slider-arrowright"><img class="next-arrow-img" src="./images/arrow-right.svg" alt=""></button>',
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
     {
@@ -29,6 +29,32 @@ $(document).ready(function () {
     nextArrow: '<button type="button" class="restaurants__slider-arrow restaurants__slider-arrowright specialities__arrow-right"><img class="next-arrow-img" src="./images/arrow-right.svg" alt=""></button>',
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+    {
+      breakpoint: 1150,
+      settings: {
+        slidesToShow: 6,
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 5,
+      }
+      },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 4,
+      }
+      },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+  ]
   });
 
   $('.header__burger-btn').click(function (event) {

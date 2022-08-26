@@ -649,7 +649,7 @@ body {
       
 		}
 		&__link {
-      width: 136px !important;
+      width: 136px ;
       height: 136px;
       box-shadow: 0px 2px 16px rgba(60, 62, 74, 0.08);
       border-radius: 6px;
@@ -733,6 +733,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 284px;
 
+    &__items-content  {
+      margin-bottom: 45px;
+    }
 		&__content {
       margin: 0 auto;
       padding-top: 56px;
@@ -771,7 +774,6 @@ body {
       color: #3F4255;
       text-align: center;
       padding-top: 10px;
-      margin-bottom: 45px;
 
 		}
 }
@@ -783,6 +785,7 @@ body {
       background-image: url(../images/mao.jpg);
       min-height: 600px;
       position: relative;
+      background-repeat: no-repeat;
 		}
 
 		&__link {
@@ -941,6 +944,7 @@ body {
       font-size: 16px;
       line-height: 20px;
       color: #D4D7E6;
+      margin: 0;
 		}
 
 		&__bottom {
@@ -980,6 +984,9 @@ body {
       color: #fff;
 		}
 }
+
+
+
 @media (max-width:1150px) {
   .header {
     &__text-title {
@@ -1019,6 +1026,20 @@ body {
       text-align: center;
     }
   }
+  .specialities {
+    &__link {
+      margin-left: 24px;
+    }
+  }
+  .info-about {
+    background-size: auto;
+  }
+  .footer {
+    &__top  {
+      gap: 160px;
+    }
+  }
+  
 }
 @media (max-width:1070px) {
   .header {
@@ -1027,10 +1048,50 @@ body {
     border-bottom-right-radius: 20%;
     border-top-right-radius: 20%;
   }
-  &__benefits {
-  visibility: hidden; 
-  margin-top: -70px;
+    &__benefits {
+    visibility: hidden; 
+    margin-top: -70px;
  }
+  }
+  .info-about {
+    &__items  {
+      background-size: 120px 140px;
+    }
+    &__number {
+      font-size: 50px;
+    }
+    &__text {
+      font-size: 22px;
+    }
+  }
+  .map{
+    padding-bottom: 0;
+    &__bg {
+      background-image: url(../images/map-adaptive.jpg);
+      background-size: contain;
+      min-height: 530px;
+    }
+    &__link {
+      display: none;
+    }
+  }
+  .our-instagram  {
+    &__title  {
+      font-size: 30px;
+    }
+  }
+  .footer {
+    display: block;
+    &__store  {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__store-block  {
+      gap: 50px;
+    }
+    &__top  {
+      display: block;
+    }
   }
 }
 @media (max-width:970px) {
@@ -1050,6 +1111,22 @@ body {
     }
     &__adress::placeholder {
       font-size: 15px;
+    }
+  }
+  .specialities{
+    padding: 50px 0;
+    &__link {
+      margin-left: 8px;
+    }
+}
+.map{
+    &__bg {
+      min-height: 500px;
+    }
+}
+.our-instagram  {
+    &__title  {
+      font-size: 25px;
     }
   }
 }
@@ -1089,6 +1166,42 @@ body {
       padding: 0 65px;
     }
   }
+  .info-about {
+    background-image: none;
+    &__items  {
+      background-size: 90px 110px;
+      min-width: 200px;
+    }
+    &__items-content  {
+      margin-bottom: 55px;
+    }
+    &__number {
+      font-size: 40px;
+      padding-bottom: 25px;
+    }
+    &__text {
+      font-size: 20px;
+      padding-top: 0;
+    }
+    &__content  {
+      padding-top: 15px;
+    }
+
+  }
+  .map{
+    padding-top: 0;
+    &__bg {
+      min-height: 440px;
+    }
+}
+.our-instagram  {
+    &__title  {
+      font-size: 22px;
+    }
+    &__list {
+      gap: 18px;
+    }
+  }
 }
 @media (max-width:770px)  {
 .restaurants  {
@@ -1100,8 +1213,35 @@ body {
     height: 40px;
   }
 }
+.map{
+    &__bg {
+      min-height: 390px;
+    }
 }
-
+}
+@media (max-width:750px)  {
+  .specialities {
+    &__link {
+      margin-left: 20px;
+    }
+}
+  .info-about {
+    &__items  {
+      min-width: 170px;
+    }
+    &__text {
+      font-size: 17px;
+    }
+    &__number {
+      padding-top: 25px;
+    }
+  }
+  .our-instagram  {
+    &__title  {
+      font-size: 20px;
+    }
+  }
+}
 @media (max-width:650px)  {
   .header {
     &__text-title {
@@ -1114,6 +1254,22 @@ body {
     }
     &__btn  {
       padding: 10px 20px;
+    }
+  }
+  .specialities {
+    &__title  {
+      font-size: 30px;
+    }
+    &__btn  {
+      padding: 10px 20px;
+    }
+    &__link {
+      width: 120px;
+      height: 120px;
+      margin-left: 15px;
+    }
+    &__text {
+      margin-top: 10px;
     }
   }
   .nearest  {
@@ -1137,6 +1293,50 @@ body {
       padding: 0 25px;
     }
   }
+  .info-about {
+    &__items  {
+      min-width: 140px;
+    }
+     &__items  {
+      background-size: 90px 110px;
+    }
+    &__text {
+      font-size: 15px;
+    }
+    &__number {
+      font-size: 35px;
+    }
+  }
+  .map{
+    &__bg {
+      min-height: 330px;
+    }
+}
+.our-instagram  {
+    &__title  {
+      font-size: 18px;
+    }
+    &__list {
+      gap: 10px;
+    }
+  }
+}
+@media(max-width:600px) {
+  .specialities {
+    &__link {
+      margin-left: 33px;
+    }
+}
+.map{
+    &__bg {
+      min-height: 300px;
+    }
+}
+.our-instagram  {
+    &__title  {
+      font-size: 16px;
+    }
+  }
 }
 @media(max-width:540px) {
   .nearest  {
@@ -1155,6 +1355,59 @@ body {
       font-size: 13px;
     }
     
+  }
+  .info-about {
+    &__items  {
+      min-width: 120px;
+    }
+     &__items  {
+      background-size: 80px 100px;
+    }
+    &__text {
+      font-size: 13px;
+    }
+    &__number {
+      font-size: 30px;
+      padding-bottom: 15px;
+    }
+  }
+  .map{
+    &__bg {
+      min-height: 270px;
+    }
+}
+}
+@media(max-width:500px) {
+  .specialities {
+    &__link {
+      margin-left: 17px;
+    }
+}
+.info-about {
+    &__items  {
+      min-width: 110px;
+    }
+     &__items  {
+      background-size: 75px 95px;
+    }
+    &__text {
+      font-size: 11px;
+    }
+    &__number {
+      font-size: 30px;
+    }
+  }
+  .map{
+    &__bg {
+      min-height: 245px;
+    }
+}
+.our-instagram  {
+  padding-bottom: 30px;
+    &__title  {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
   }
 }
 @media (max-width:440px)  {
@@ -1185,6 +1438,25 @@ body {
       height: 85px;
     }
   }
+  .specialities {
+    padding: 30px 0;
+    &__title  {
+      font-size: 24px;
+    }
+    &__btn  {
+      padding: 5px 10px;
+      height: fit-content;
+    }
+    &__btn-text {
+      font-size: 12px;
+    }
+    &__top  {
+      margin-bottom: 30px;
+    }
+    &__link  {
+      margin-left: 7px;
+    }
+  }
   .nearest  {
     &__title  {
       line-height: 40px;
@@ -1196,11 +1468,12 @@ body {
     &__adress {
       width: 190px;
       height: 35px;
-      padding-left: 0;
+      padding-left: 10px;
     }
     &__adress::placeholder {
       font-size: 10px;
       background: none;
+      text-align: left;
     }
     &__btn  {
       width: 65px;
@@ -1209,6 +1482,81 @@ body {
     &__btn-text {
       font-size: 10px;
     }
+  }
+  .info-about {
+    &__items  {
+      width: 49%;
+    }
+     &__items  {
+      background-size: 70px 85px;
+      min-height: 120px;
+    }
+    &__text {
+      font-size: 11px;
+    }
+    &__number {
+      font-size: 30px;
+      padding-top: 10px;
+      padding-bottom: 7px;
+   }
+    &__list {
+      flex-wrap: wrap;
+      margin: 0 30px;
+    }
+    &__items-content {
+      margin-bottom: 15px;
+    }
+  }
+  .map{
+    &__bg {
+      min-height: 210px;
+    }
+}
+.our-instagram  {
+    &__title  {
+      font-size: 10px;
+      line-height: 40px;
+    }
+  }
+}
+@media (max-width:415px)  {
+  .specialities {
+    &__link {
+      width: 115px;
+      height: 115px;
+      margin-left: 6px;
+  }
+  }
+}
+@media (max-width:391px)  {
+  .header {
+    &__burger-btn::before  {
+      top: 16px;
+    }
+    &__burger-btn::after  {
+      bottom: 14px;
+    }
+  }
+  .specialities {
+    &__link {
+      width: 100px;
+      height: 100px;
+      margin-left: 7px;
+      padding: 10px 0;
+  }
+  }
+  .rightside-menu {
+    width: 100%;
+  }
+  .map{
+    &__bg {
+      min-height: 190px;
+    }
+}
+.our-instagram  {
+  &__list {
+    gap: 10px;
+  }
   }
 }
 @media (max-width:370px)  {
@@ -1236,11 +1584,43 @@ body {
   }
   .restaurants  {
     &__box  {
-      height: 60px;
+      height: 80px;
+    }
+  }
+  .map{
+    &__bg {
+      min-height: 175px;
+    }
+}
+}
+
+
+@media(max-width:340px) {
+   .specialities {
+    &__link {
+      width: 90px;
+      height: 90px;
+      margin-left: 6px;
+  }
+  &__img  {
+    width: 40px;
+  }
+  &__text {
+    margin-top: 2px;
+    font-size: 13px;
+  }
+  }
+  .map{
+    &__bg {
+      min-height: 160px;
+    }
+}
+.our-instagram  {
+    &__title  {
+      font-size: 8px;
     }
   }
 }
-
 @media (max-width:321px)  {
   .header {
     &__text-title {
@@ -1249,7 +1629,6 @@ body {
   }
   .restaurants  {
     &__box  {
-      height: 50px;
     }
   }
   .nearest  {
@@ -1264,6 +1643,21 @@ body {
   .rightside-menu {
     width: 100%;
   }
+  .specialities {
+    &__link {
+      margin-left: 3px;
+    }
+  }
+  .info-about{
+    &__list {
+      margin: 0 10px;
+    }
+  }
+  .map{
+    &__bg {
+      min-height: 155px;
+    }
+}
 }
 
 
