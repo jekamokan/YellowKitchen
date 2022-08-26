@@ -159,12 +159,14 @@ body {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.5px;
+  color: #3F4255;
 }
 .header__order-text span {
   font-family: "Martel Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  color: #3F4255;
 }
 .header__benefits {
   box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
@@ -467,7 +469,7 @@ body {
   height: 72px;
   background-color: #FFE145;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   transition: all .2s ease;
 }
@@ -868,6 +870,17 @@ body {
     display: block;
     margin: 15px;
   }
+
+  .nearest__adress {
+    width: 300px;
+    height: 63px;
+  }
+  .nearest__btn {
+    height: 63px;
+  }
+  .nearest__adress::placeholder {
+    font-size: 15px;
+  }
 }
 @media (max-width: 880px) {
   .header__text-title {
@@ -886,6 +899,23 @@ body {
   }
   .header__order-btn {
     margin: 15px auto;
+  }
+
+  .nearest {
+    padding: 50px 0;
+  }
+  .nearest__content {
+    flex-direction: column;
+  }
+  .nearest__text {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nearest__form {
+    margin-top: 35px;
+  }
+  .nearest__content {
+    padding: 0 65px;
   }
 }
 @media (max-width: 770px) {
@@ -907,6 +937,42 @@ body {
   }
   .restaurants__btn {
     padding: 10px 20px;
+  }
+
+  .nearest__title {
+    font-size: 32px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .nearest__text {
+    letter-spacing: 0.02em;
+    font-size: 15px;
+  }
+  .nearest__adress {
+    width: 260px;
+    height: 55px;
+  }
+  .nearest__btn {
+    height: 55px;
+  }
+  .nearest__content {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 540px) {
+  .nearest__adress {
+    width: 220px;
+    height: 45px;
+  }
+  .nearest__adress::placeholder {
+    font-size: 12px;
+    background-position: 0 100%;
+  }
+  .nearest__btn {
+    height: 45px;
+  }
+  .nearest__btn-text {
+    font-size: 13px;
   }
 }
 @media (max-width: 440px) {
@@ -932,7 +998,31 @@ body {
     margin: 35px 0;
   }
   .restaurants__box {
-    height: 75px;
+    height: 85px;
+  }
+
+  .nearest__title {
+    line-height: 40px;
+    font-size: 22px;
+  }
+  .nearest__text {
+    font-size: 13px;
+  }
+  .nearest__adress {
+    width: 190px;
+    height: 35px;
+    padding-left: 0;
+  }
+  .nearest__adress::placeholder {
+    font-size: 10px;
+    background: none;
+  }
+  .nearest__btn {
+    width: 65px;
+    height: 35px;
+  }
+  .nearest__btn-text {
+    font-size: 10px;
   }
 }
 @media (max-width: 370px) {
@@ -969,5 +1059,19 @@ body {
 
   .restaurants__box {
     height: 50px;
+  }
+
+  .nearest {
+    padding: 30px 0;
+  }
+  .nearest__content {
+    padding: 0 10px;
+  }
+  .nearest__text {
+    font-size: 12px;
+  }
+
+  .rightside-menu {
+    width: 100%;
   }
 }
