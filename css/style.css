@@ -913,12 +913,19 @@ body {
   .footer__store {
     display: flex;
     justify-content: space-around;
+    gap: 65px;
   }
   .footer__store-block {
     gap: 50px;
   }
   .footer__top {
     display: block;
+  }
+  .footer__list-box {
+    justify-content: space-evenly;
+  }
+  .footer__bottom {
+    justify-content: space-around;
   }
 }
 @media (max-width: 970px) {
@@ -1024,6 +1031,19 @@ body {
   .our-instagram__list {
     gap: 18px;
   }
+
+  .footer__list-box {
+    gap: 55px;
+  }
+  .footer__item-title {
+    font-size: 22px;
+  }
+  .footer__item-link {
+    font-size: 14px;
+  }
+  .footer__item-languages {
+    font-size: 14px;
+  }
 }
 @media (max-width: 770px) {
   .restaurants__box {
@@ -1127,6 +1147,10 @@ body {
   .our-instagram__list {
     gap: 10px;
   }
+
+  .footer__list-box {
+    gap: 30px;
+  }
 }
 @media (max-width: 600px) {
   .specialities__link {
@@ -1139,6 +1163,12 @@ body {
 
   .our-instagram__title {
     font-size: 16px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
   }
 }
 @media (max-width: 540px) {
@@ -1173,6 +1203,13 @@ body {
 
   .map__bg {
     min-height: 270px;
+  }
+
+  .footer__item-title {
+    font-size: 20px;
+  }
+  .footer__item-link {
+    font-size: 12px;
   }
 }
 @media (max-width: 500px) {
@@ -1304,8 +1341,57 @@ body {
   }
 
   .our-instagram__title {
-    font-size: 10px;
+    font-size: 13px;
     line-height: 40px;
+    margin-bottom: 5px;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+  .footer__list-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__list {
+    text-align: center;
+  }
+  .footer__link-logobox {
+    padding-bottom: 30px;
+  }
+  .footer__link-logobox::before {
+    display: none;
+  }
+  .footer__store::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    background-color: #D4D7E6;
+    top: 44px;
+  }
+  .footer__top {
+    position: relative;
+  }
+  .footer__item-link {
+    font-size: 15px;
+  }
+  .footer__item {
+    margin-bottom: 13px;
+  }
+  .footer__item-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .footer__bottom {
+    padding-top: 20px;
+  }
+  .footer__bottom-privacy {
+    gap: 30px;
+  }
+  .footer__store-block {
+    gap: 20px;
   }
 }
 @media (max-width: 415px) {
@@ -1321,6 +1407,9 @@ body {
   }
   .header__burger-btn::after {
     bottom: 14px;
+  }
+  .header__order-btn {
+    background: linear-gradient(to top, #ffe145, #ffffff);
   }
 
   .specialities__link {
