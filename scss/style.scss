@@ -1629,6 +1629,14 @@ body {
     &__store-block  {
       gap: 20px;
     }
+    &__item-language  {
+      border-bottom: 1px solid #D4D7E6;
+    border-radius: 5px;
+    border-top: 1px solid #D4D7E6;
+    }
+  }
+  .rightside-menu {
+    width: 100%;
   }
 }
 @media (max-width:415px)  {
@@ -1642,9 +1650,6 @@ body {
 }
 @media (max-width:391px)  {
   .header {
-    
-    
-    
     &__order-btn  {
       background: linear-gradient(to top, #ffe145, #ffffff);
     }
@@ -1657,9 +1662,7 @@ body {
       padding: 10px 0;
   }
   }
-  .rightside-menu {
-    width: 100%;
-  }
+  
   .map{
     &__bg {
       min-height: 190px;

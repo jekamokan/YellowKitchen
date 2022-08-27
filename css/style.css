@@ -1407,6 +1407,15 @@ body {
   .footer__store-block {
     gap: 20px;
   }
+  .footer__item-language {
+    border-bottom: 1px solid #D4D7E6;
+    border-radius: 5px;
+    border-top: 1px solid #D4D7E6;
+  }
+
+  .rightside-menu {
+    width: 100%;
+  }
 }
 @media (max-width: 415px) {
   .specialities__link {
@@ -1425,10 +1434,6 @@ body {
     height: 100px;
     margin-left: 7px;
     padding: 10px 0;
-  }
-
-  .rightside-menu {
-    width: 100%;
   }
 
   .map__bg {
