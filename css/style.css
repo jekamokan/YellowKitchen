@@ -977,6 +977,7 @@ body {
   }
   .header__order-btn {
     margin: 15px auto;
+    background: linear-gradient(to top, #ffe145, #ffffff);
   }
 
   .nearest {
@@ -1142,7 +1143,7 @@ body {
   }
 
   .our-instagram__title {
-    font-size: 18px;
+    font-size: 25px;
   }
   .our-instagram__list {
     gap: 10px;
@@ -1150,6 +1151,13 @@ body {
 
   .footer__list-box {
     gap: 30px;
+  }
+
+  .our-instagram__list {
+    flex-wrap: wrap;
+  }
+  .our-instagram__item {
+    width: 48%;
   }
 }
 @media (max-width: 600px) {
@@ -1162,7 +1170,7 @@ body {
   }
 
   .our-instagram__title {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .footer__bottom {
@@ -1238,7 +1246,7 @@ body {
     padding-bottom: 30px;
   }
   .our-instagram__title {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 0;
   }
 }
@@ -1250,12 +1258,18 @@ body {
   .header__nav {
     gap: 20px;
   }
+  .header__burger-btn::before {
+    top: 16px;
+  }
+  .header__burger-btn::after {
+    bottom: 14px;
+  }
 
   .restaurants__title-text {
     font-size: 24px;
   }
   .restaurants__btn {
-    padding: 5px 10px;
+    padding: 7px 15px;
     height: fit-content;
   }
   .restaurants__btn-text {
@@ -1275,7 +1289,7 @@ body {
     font-size: 24px;
   }
   .specialities__btn {
-    padding: 5px 10px;
+    padding: 7px 15px;
     height: fit-content;
   }
   .specialities__btn-text {
@@ -1341,7 +1355,7 @@ body {
   }
 
   .our-instagram__title {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 40px;
     margin-bottom: 5px;
   }
@@ -1388,7 +1402,7 @@ body {
     padding-top: 20px;
   }
   .footer__bottom-privacy {
-    gap: 30px;
+    gap: 20px;
   }
   .footer__store-block {
     gap: 20px;
@@ -1402,12 +1416,6 @@ body {
   }
 }
 @media (max-width: 391px) {
-  .header__burger-btn::before {
-    top: 16px;
-  }
-  .header__burger-btn::after {
-    bottom: 14px;
-  }
   .header__order-btn {
     background: linear-gradient(to top, #ffe145, #ffffff);
   }
@@ -1481,7 +1489,7 @@ body {
   }
 
   .our-instagram__title {
-    font-size: 8px;
+    font-size: 13px;
   }
 }
 @media (max-width: 321px) {
