@@ -6,19 +6,18 @@ $(document).ready(function () {
     nextArrow: '<button type="button" class="restaurants__slider-arrow restaurants__slider-arrowright"><img class="next-arrow-img" src="./images/arrow-right.svg" alt=""></button>',
     autoplay: true,
     autoplaySpeed: 2000,
-    responsive: [
-    {
-      breakpoint: 650,
-      settings: {
-        slidesToShow: 3,
-      }
-    },
-    {
-      breakpoint: 440,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
+    responsive: [{
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 440,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
     ]
   });
 
@@ -29,32 +28,31 @@ $(document).ready(function () {
     nextArrow: '<button type="button" class="restaurants__slider-arrow restaurants__slider-arrowright specialities__arrow-right"><img class="next-arrow-img" src="./images/arrow-right.svg" alt=""></button>',
     autoplay: true,
     autoplaySpeed: 2000,
-    responsive: [
-    {
-      breakpoint: 1150,
-      settings: {
-        slidesToShow: 6,
-      }
-    },
-    {
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 5,
-      }
+    responsive: [{
+        breakpoint: 1150,
+        settings: {
+          slidesToShow: 6,
+        }
       },
-    {
-      breakpoint: 750,
-      settings: {
-        slidesToShow: 4,
-      }
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 5,
+        }
       },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 3,
-      }
-    },
-  ]
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+    ]
   });
 
   $('.header__burger-btn').click(function (event) {
@@ -75,3 +73,29 @@ $(document).ready(function () {
 
 
 });
+
+
+
+
+
+$('body').on('click', '.popup__password-control', function(){
+	if ($('#password-input').attr('type') == 'password'){
+		$(this).addClass('popup__password-view');
+		$('#password-input').attr('type', 'text');
+	} else {
+		$(this).removeClass('popup__password-view');
+		$('#password-input').attr('type', 'password');
+	}
+	return false;
+});
+
+
+
+// $('.header__login-btn').click(function () {
+//     $('body').addClass('popup');
+//   })
+//   $('.popup__close').click(function () {
+//     $('body').removeClass('popup');
+//   })
+
+

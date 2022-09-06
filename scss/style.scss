@@ -32,9 +32,10 @@ body {
   }
 
   &__login-btn {
-    padding: 0 0 0 26px;
+    padding: 15px 0 0 26px;
     background-color: transparent;
     border: none;
+    display: inline-block;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -55,9 +56,10 @@ body {
   }
 
   &__basket-btn {
-    padding: 0 0 0 26px;
+    padding: 15px 0 0 26px;
     background-color: transparent;
     border: none;
+    display: inline-block;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -984,6 +986,146 @@ body {
       line-height: 16px;
       color: #fff;
 		}
+}
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease;
+  &:target{
+    opacity: 1;
+    visibility: visible;
+  }
+  &:target &__content {
+    transform: translate(0 0);
+    opacity: 1;
+  }
+  		&__body {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      padding: 30px 10px;
+		}
+
+    &__area {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+		&__content {
+      background-color: #fff;
+      color: #000;
+      max-width: 800px;
+      border-radius: 20px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+      transition: all .5s ease;
+      transform: translate(100% 100%);
+      opacity: 0;
+		}
+
+		&__form {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      position: relative;
+      align-items: center;
+		}
+
+		&__close {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      font-size: 40px;
+      transform: rotate(45deg);
+		}
+    &__one  {
+      position: relative;
+      margin: 30px;
+    }
+    &__two  {
+      position: relative;
+      margin: 30px;
+    }
+
+		&__login {
+      font-family: $font-martel;
+      font-size: 15px;
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      background-color: white;
+      line-height: 17px;
+		}
+
+		&__login-input {
+      border-radius: 5px;
+      border: 1px solid #FFE145;
+      padding-left: 10px;
+		}
+    &__login-input::placeholder {
+      text-align: center;
+    }
+
+		&__password {
+      font-family: $font-martel;
+      font-size: 15px;
+      font-family: $font-martel;
+      font-size: 15px;
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      background-color: white;
+      line-height: 17px;
+		}
+
+		&__password-input {
+      border-radius: 5px;
+      border: 1px solid #FFE145;
+      padding-left: 10px;
+		}
+    &__password__input::placeholder  {
+      text-align: center;
+   }
+
+    &__password-control {
+      position: absolute;
+      top: 4px;
+      right: 6px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(../images/view.svg) 0 0 no-repeat;
+    }
+    &__password-view  {
+      background: url(../images/no-view.svg) 0 0 no-repeat;
+
+    }
+
+		&__login-submit {
+      border-radius: 15px;
+      background-color: #ffe14580;
+      border: 1px solid #ffe145;
+      width: 200px;
+      padding: 2px;
+      font-family: $font-martel;
+      cursor: pointer;
+      transition: all .3s ease;
+		}
+    &__login-submit:hover {
+      background-color: #ffe045c6;
+      transform: scale(1.05);
+      box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5)  ;
+
+    }
 }
 
 

@@ -28,8 +28,8 @@
               </a>
             </div>
             <div class="header__nav">
-              <button class="header__login-btn">Log in</button>
-              <button class="header__basket-btn">0</button>
+              <a class="header__login-btn" href="#popup">Log in</a>
+              <a class="header__basket-btn">0</a>
               <div class="header__burger-btn">
                 <span ></span>
               </div>
@@ -502,6 +502,33 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <a href="" class="popup__area"></a>
+      <div class="popup__body">
+        <div class="popup__content">
+          <form class="popup__form" action="">
+            <a href="#" class="popup__close">+</a>
+            <div class="popup__one">
+              <label class="popup__login" for="login">
+              Login
+            </label>
+            <input class="popup__login-input" placeholder="e-mail" type="text" name="" id="">
+            </div>
+            <div class="popup__two">
+              <label class="popup__password" for="login">
+              Password
+            </label>
+            <input class="popup__password-input" placeholder="********" type="password" name="password" id="password-input">
+            <a href="#" class="popup__password-control"></a>
+            </div>
+            <input type="submit" class="popup__login-submit">
+          </form>          
+        </div>
+      </div>
+    </div>
+
+
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
