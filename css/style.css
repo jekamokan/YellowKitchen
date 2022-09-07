@@ -2,14 +2,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
 }
-body::-webkit-scrollbar {
-  width: 12px;               
-}
-body::-webkit-scrollbar-thumb {
-  background-color:#FFE145;    
-  border-radius: 20px;       
-  border: 1px solid #B79C10;
-}
+
 .container {
   max-width: 1286px;
   padding: 0 15px;
@@ -347,7 +340,7 @@ body::-webkit-scrollbar-thumb {
 }
 .rightside-menu.rightside-menu--close {
   transform: translateX(500%);
-  display: none;
+  visibility: hidden;
 }
 .rightside-menu__call {
   font-family: "Martel Sans", sans-serif;
@@ -845,9 +838,7 @@ body::-webkit-scrollbar-thumb {
   visibility: visible;
 }
 .popup:target .popup__content {
-  /* transform: translate(0px, 0px); */
-    transform: perspective(600px) translate(0px, 0px) rotateY(0deg);
-
+  transform: translate(0 0);
   opacity: 1;
 }
 .popup__body {
@@ -870,9 +861,8 @@ body::-webkit-scrollbar-thumb {
   max-width: 800px;
   border-radius: 20px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-  transition: all .8s ease;
-  /* transform: translate(200%, -100%); */
-  transform: perspective(600px) translate(200%, -100%) rotateY(45deg);
+  transition: all .5s ease;
+  transform: translate(100% 100%);
   opacity: 0;
 }
 .popup__form {
