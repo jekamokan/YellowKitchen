@@ -957,6 +957,7 @@ body {
   background: url(../images/no-view.svg) 0 0 no-repeat;
 }
 .popup__login-submit {
+  color: #000;
   border-radius: 15px;
   background-color: #ffe14580;
   border: 1px solid #ffe145;
