@@ -418,7 +418,7 @@ body {
   box-shadow: -6px 8px 12px 0px rgba(0,0,0,0.57);
   transition: all 0.7s ease;
   &.rightside-menu--close {
-    transform: translateX(500%);
+    transform: translateX(100%);
     // display:none;
     visibility: hidden;
   }
