@@ -70,6 +70,9 @@ body {
       width: 24px;
       height: 24px;
     }
+    &:hover {
+      filter: drop-shadow(0px 0px 10px #000);
+    }
   }
 
   &__basket-btn {
@@ -92,6 +95,9 @@ body {
       top: 25%;
       width: 24px;
       height: 24px;
+    }
+    &:hover {
+      filter: drop-shadow(0px 0px 10px #000);
     }
   }
 
@@ -435,9 +441,8 @@ body {
   box-shadow: -6px 8px 12px 0px rgba(0,0,0,0.57);
   transition: all 0.7s ease;
   &.rightside-menu--close {
-    transform: translateX(100%);
-    // display:none;
-    visibility: hidden;
+    transform: translateX(500%);
+    display:none;
   }
 
 		&__call {
