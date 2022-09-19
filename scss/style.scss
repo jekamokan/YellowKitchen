@@ -436,9 +436,10 @@ body {
   background-color: #fff;
   top: 73px;
   right: 0;
+  height: 100vh;
   padding: 22px 42px 0 36px;
   box-shadow: -6px 8px 12px 0px rgba(0,0,0,0.57);
-  transition: all 0.7s ease;
+  transition: all 1s ease;
   &.rightside-menu--close {
     top: -200%;
   }
