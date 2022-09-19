@@ -354,14 +354,12 @@ body {
   background-color: #fff;
   top: 73px;
   right: 0;
-  bottom: 0;
   padding: 22px 42px 0 36px;
   box-shadow: -6px 8px 12px 0px rgba(0, 0, 0, 0.57);
   transition: all 0.7s ease;
 }
 .rightside-menu.rightside-menu--close {
-  transform: translateX(500%);
-  display: none;
+  top: -200%;
 }
 .rightside-menu__call {
   font-family: "Martel Sans", sans-serif;
