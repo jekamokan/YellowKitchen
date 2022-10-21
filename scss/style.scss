@@ -757,9 +757,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 284px;
 
-    &__items-content  {
-      margin-bottom: 45px;
-    }
+    
 		&__content {
       margin: 0 auto;
       padding-top: 56px;
@@ -770,6 +768,7 @@ body {
 		&__list {
       display: flex;
       justify-content: center;
+      padding-bottom: 45px !important;
 		}
 
 		&__items {

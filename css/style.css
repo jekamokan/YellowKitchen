@@ -645,9 +645,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 284px;
 }
-.info-about__items-content {
-  margin-bottom: 45px;
-}
 .info-about__content {
   margin: 0 auto;
   padding-top: 56px;
@@ -658,6 +655,7 @@ body {
 .info-about__list {
   display: flex;
   justify-content: center;
+  padding-bottom: 45px !important;
 }
 .info-about__items {
   background-image: url(../images/circle.png);

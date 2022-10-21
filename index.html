@@ -10,8 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;700;800&family=Open+Sans:wght@700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -55,13 +56,13 @@
       <div class="container">
         <div class="header__content">
           <div class="header__text">
-            <h1 class="header__text-title">Your Food court at home</h1>
+            <h1 class="header__text-title wow fadeInLeft">Your Food court at home</h1>
             <div class="header__content-btn">
               <div class="header__btn-box">
-              <button class="header__order-btn ">
+              <button class="header__order-btn wow rotateInDownLeft">
                 <p class="header__order-text"><span>Delivery</span> Order in</p>
               </button>
-              <button class="header__order-btn">
+              <button class="header__order-btn wow rotateInDownRight">
                 <p class="header__order-text">
                   <span>Takeout</span> Grab and go
                 </p>
@@ -107,12 +108,12 @@
     <section class="restaurants">
       <div class="container">
         <div class="restaurants__title">
-          <h2 class="restaurants__title-text">Restaurants</h2>
-          <button class="restaurants__btn " type="button">
+          <h2 class="restaurants__title-text wow slideInLeft">Restaurants</h2>
+          <button class="restaurants__btn wow jackInTheBox" type="button">
             <span class="restaurants__btn-text">show all</span>
           </button>
         </div>
-        <div class="restaurants__slider">
+        <div class="restaurants__slider wow slideInUp">
           <div class="restaurants__item">
             <a  class="restaurants__link" href="">
               <img class="restaurants__img" src="./images/slider11.jpg" alt="">
@@ -184,11 +185,11 @@
     <section class="nearest">
       <div class="container">
         <div class="nearest__content">
-          <div class="nearest__info">
+          <div class="nearest__info wow rotateInUpLeft">
             <h2 class="nearest__title">Your nearest restaurants</h2>
             <p class="nearest__text">Each kitchen works with its own delivery area to deliver food to you as soon as possible</p>
           </div>
-          <form class="nearest__form">
+          <form class="nearest__form wow rotateInUpRight">
             <input class="nearest__adress" type="text" name="geolocation" placeholder="Enter delivery address" >
             <button class="nearest__btn " type="button">
               <span class="nearest__btn-text">send</span>
@@ -201,14 +202,14 @@
     <section class="specialities">
       <div class="container">
         <div class="specialities__top">
-          <h2 class="specialities__title">Specialities</h2>
-          <button class="specialities__btn ">
+          <h2 class="specialities__title wow slideInLeft">Specialities</h2>
+          <button class="specialities__btn wow jackInTheBox">
             <span class="specialities__btn-text">
               show all
             </span>
           </button>
         </div>
-        <div class="specialities__slider">
+        <div class="specialities__slider wow slideInUp ">
             <div class="specialities__items">
               <a class="specialities__link" href="#">
                 <div class="specialities__item">
@@ -346,21 +347,19 @@
       <div class="container">
         <div class="info-about__content">
           <ul class="info-about__list">
-            <li class="info-about__items">
-              <div class="info-about__items-content">
+            <li class="info-about__items wow bounceInLeft"data-wow-duration="2s">
                 <p class="info-about__number">1</p>
                 <p class="info-about__text">kitchen</p>
-              </div>
             </li>
-            <li class="info-about__items">
+            <li class="info-about__items wow bounceInUp" data-wow-duration="2s">
               <p class="info-about__number">11</p>
               <p class="info-about__text">specialties</p>
             </li>
-            <li class="info-about__items">
+            <li class="info-about__items wow bounceInUp" data-wow-duration="2s">
               <p class="info-about__number">11</p>
               <p class="info-about__text">restaurants</p>
             </li>
-            <li class="info-about__items">
+            <li class="info-about__items wow bounceInRight" data-wow-duration="2s">
               <p class="info-about__number">1</p>
               <p class="info-about__text">transport costs</p>
             </li>
@@ -373,28 +372,28 @@
       <div class="container">
         <div class="map__bg">
           <a href="#" class="map__link" tooltip="lorem">
-            <img class="map__img-one "  title="57-63 Av. Jean Jaurès, 75019 Paris, Франція" src="./images/mapsgeo.svg" alt=""  >
+            <img class="map__img-one wow heartBeat"data-wow-delay="1s"  title="57-63 Av. Jean Jaurès, 75019 Paris, Франція" src="./images/mapsgeo.svg" alt=""  >
           </a>
           <a href="#" class="map__link">
-            <img class="map__img-two" title="1 Pass. Ruelle, 75018 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+            <img class="map__img-two wow heartBeat"data-wow-delay="1s" title="1 Pass. Ruelle, 75018 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
           </a>
           <a href="#" class="map__link">
-            <img class="map__img-thre" title="Rue du 8 Mai 1945, 75010 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+            <img class="map__img-thre wow heartBeat"data-wow-delay="1s" title="Rue du 8 Mai 1945, 75010 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
           </a>
           <a href="#" class="map__link">
-            <img class="map__img-four" title="9-11 Pl. du Colonel Fabien, 75010 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+            <img class="map__img-four wow heartBeat"data-wow-delay="1s" title="9-11 Pl. du Colonel Fabien, 75010 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
           </a>
           <a href="#" class="map__link">
-            <img class="map__img-five" title="44 Rue de Paradis, 75010 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+            <img class="map__img-five wow heartBeat"data-wow-delay="1s" title="44 Rue de Paradis, 75010 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
           </a>
           <a href="#" class="map__link">
-            <img class="map__img-six" title="2 Av. de la Cascade, 75019 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+            <img class="map__img-six wow heartBeat"data-wow-delay="1s" title="2 Av. de la Cascade, 75019 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
           </a>
           <a href="#" class="map__link">
-            <img class="map__img-seven" title="28-32 Rue de l'Amiral Mouchez, 75014 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
+            <img class="map__img-seven wow heartBeat"data-wow-delay="1s" title="28-32 Rue de l'Amiral Mouchez, 75014 Paris, Франція" src="./images/mapsgeo.svg" alt="" >
           </a>
           <a href="#" class="map__link">
-            <img class="map__img-eight" title="15 Rue Pierre Rigaud, 94200 Ivry-sur-Seine, Франція" src="./images/mapsgeo.svg" alt="" >
+            <img class="map__img-eight wow heartBeat"data-wow-delay="1s" title="15 Rue Pierre Rigaud, 94200 Ivry-sur-Seine, Франція" src="./images/mapsgeo.svg" alt="" >
           </a>
         </div>
       </div>
@@ -402,26 +401,26 @@
 
     <div class="our-instagram">
       <div class="container">
-        <h2 class="our-instagram__title">
+        <h2 class="our-instagram__title wow bounceInLeft" data-wow-duration="2s" >
           <span>#YellowKitchens</span> in instagram
         </h2>
         <ul class="our-instagram__list">
-          <li class="our-instagram__item">
+          <li class="our-instagram__item wow bounceInUp"data-wow-duration="2.2s">
             <a href="" class="our-instagram__link">
               <img class="our-instagram__img" src="./images/inst1.jpg" alt="" >
             </a>
           </li>
-          <li class="our-instagram__item">
+          <li class="our-instagram__item wow bounceInUp"data-wow-duration="2.3s">
             <a href="" class="our-instagram__link">
               <img class="our-instagram__img" src="./images/inst2.jpg" alt="" >
             </a>
           </li>
-          <li class="our-instagram__item">
+          <li class="our-instagram__item wow bounceInUp"data-wow-duration="2.4s">
             <a href="" class="our-instagram__link">
               <img class="our-instagram__img" src="./images/inst3.jpg" alt="" >
             </a>
           </li>
-          <li class="our-instagram__item">
+          <li class="our-instagram__item wow bounceInUp"data-wow-duration="2.5s">
             <a href="" class="our-instagram__link">
               <img class="our-instagram__img" src="./images/inst4.jpg" alt="" >
             </a>
@@ -534,6 +533,10 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
   <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+  <script src="js/main.js"></script>
   </body>
 </html>
