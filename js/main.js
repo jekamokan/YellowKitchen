@@ -57,10 +57,13 @@ $(document).ready(function () {
 
   $('.header__burger-btn').click(function (event) {
     $('.rightside-menu').toggleClass('rightside-menu--close');
-  })
-  $('.header__burger-btn').click(function (event) {
     $('.header__burger-btn').toggleClass('header__burger-line--close');
+    $('body').toggleClass('body__modal');
+
   })
+  // $('.header__burger-btn').click(function (event) {
+  //   $('.header__burger-btn').toggleClass('header__burger-line--close');
+  // })
   $('.nearest__btn').click(function (event) {
     $('.nearest__btn').toggleClass('nearest__btn-loading');
   })
